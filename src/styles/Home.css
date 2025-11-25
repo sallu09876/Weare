@@ -1,0 +1,50 @@
+/* ---------- NAVBAR ---------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 38px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.brand a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+
+.main-nav a:hover {
+  opacity: 0.6;
+}
+
+.cart-icon {
+  font-size: 33px;
+  display: flex;
+  align-items: center;
+  color: #111;
+  transition: 0.3s ease;
+
+}
+
+.cart-icon:hover {
+  opacity: 0.5;
+}
+
+#cart-logo {
+  margin-right: 10px;
+}
