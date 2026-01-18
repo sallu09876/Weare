@@ -1,36 +1,47 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import hero1 from '/assets/hero1.jpg'
-import hero2 from '/assets/hero2.jpg'
-import hero3 from '/assets/hero3.jpg'
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/Home.css";
 
 export default function Home() {
   return (
-    <>
-      <div className="home-container route-page">
-        
-        <section className="hero-section hero-premium border-gradient glass-card">
+    <div className="home-page route-page">
 
-          <div className="hero-content">
-            <h1 className="hero-title">Elevate Your Style</h1>
-            <p className="hero-sub">Premium Fashion for Men & Women</p>
+      {/* HERO */}
+      <section className="hero">
+        <div className="hero-inner">
 
-            <div className="hero-buttons">
-              <Link to="/men" className="btn-gold">Shop Men</Link>
-              <Link to="/women" className="btn-outline-lux">Shop Women</Link>
+          <div className="hero-text">
+            <span className="hero-badge">Premium Collection 2026</span>
+
+            <h1>
+              Elevate Your <br />
+              <span>Everyday Style</span>
+            </h1>
+
+            <p>
+              Discover modern, minimal and premium fashion crafted for
+              confidence — for both men & women.
+            </p>
+
+            <div className="hero-actions">
+              <Link to="/men" className="btn-primary">Shop Men</Link>
+              <Link to="/women" className="btn-secondary">Shop Women</Link>
             </div>
           </div>
 
-          {/* <div className="hero-images">
-            <img src={hero1} className="float-img f1" alt="" />
-            <img src={hero2} className="float-img f2" alt="" />
-            <img src={hero3} className="float-img f3" alt="" />
-          </div> */}
+          <div className="hero-visual">
+            <div className="hero-image-card">
+              <img src="/assets/hero1.jpg" alt="Premium fashion" />
+            </div>
+          </div>
 
-        </section>
+        </div>
 
-      </div>
-    </>
-  )
+        <div className="scroll-indicator">
+          <span />
+        </div>
+      </section>
+
+    </div>
+  );
 }
-
